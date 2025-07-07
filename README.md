@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+ Personal Task Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description
+A simple and responsive Task Tracker web application built using React.js. It allows users to log in, add, edit, delete, filter, and search tasks with features like setting priorities and due dates.
 
-## Available Scripts
 
-In the project directory, you can run:
+ Features
 
-### `npm start`
+- 👤 Login with localStorage persistence
+- ➕ Add tasks with title, description, priority, and due date
+- ✅ Mark tasks as completed or pending
+- ✏️ Edit task details inline
+- 🗑️ Delete tasks with confirmation
+- 🔍 Real-time search and filter by status (all, completed, pending)
+- 🎯 Priority levels: High, Medium, Low
+- 📅 Due Date picker
+- 💾 Tasks persist on page refresh (localStorage)
+- 📱 Responsive design (mobile + desktop)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ 
+ Setup Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository  
+git clone https://github.com/JoshiHarshita123/Task-Tracker.git
 
-### `npm test`
+csharp
+Copy
+Edit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate into the project directory  
+cd Task-Tracker
 
-### `npm run build`
+markdown
+Copy
+Edit
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies  
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+pgsql
+Copy
+Edit
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server  
+npm start
 
-### `npm run eject`
+yaml
+Copy
+Edit
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Open your browser and go to:  
+[http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ Technologies Used
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- ⚛️ React.js (functional components + hooks)
+- 🎨 CSS
+- 💾 localStorage
+- 🧩 React DOM, JSX
+- 🔍 VS Code for development
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+ Live Demo
 
-## Learn More
+[🔗 Click here to view the live app](https://your-deployment-url.netlify.app)  
+(Replace with actual Netlify/Vercel/GitHub Pages link after deployment)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ Sample Tasks for Testing
 
-### Code Splitting
+```js
+const sampleTasks = [
+{
+ id: 1,
+ title: "Complete React assignment",
+ description: "Build a task tracker application",
+ completed: false,
+ createdAt: "2024-01-15T10:00:00Z"
+},
+{
+ id: 2,
+ title: "Review JavaScript concepts",
+ description: "Go through ES6+ features",
+ completed: true,
+ createdAt: "2024-01-14T15:30:00Z"
+}
+];
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Author
+Harshita Joshi
+B.Tech CSE — Graphic Era Hill University
 
-### Analyzing the Bundle Size
+ License
+This project is open-source and free to use.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
