@@ -1,0 +1,48 @@
+.task-item {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+  border-left: 6px solid green;
+  background-color: #eaffea;
+}
+
+.task-item.pending {
+  border-left: 6px solid orange;
+}
+
+.task-item.highlight {
+  animation: fadeInHighlight 1s ease;
+}
+
+@keyframes fadeInHighlight {
+  from { background-color: #ffffcc; }
+  to { background-color: white; }
+}
+
+.task-edit-fields input,
+.task-edit-fields textarea,
+.task-edit-fields select {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+.task-info p {
+  margin: 4px 0;
+}
+
+.delete-btn {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

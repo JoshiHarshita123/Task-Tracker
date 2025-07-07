@@ -1,0 +1,38 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.task-form,
+.search-bar,
+.task-filter,
+.task-list {
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+@media (min-width: 600px) {
+  .search-bar input {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .task-form,
+  .task-filter,
+  .task-list {
+    padding: 0 20px;
+  }
+}
