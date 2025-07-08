@@ -1,96 +1,82 @@
- Personal Task Tracker
+# ✅ Task Tracker (React App)
 
-Description
-A simple and responsive Task Tracker web application built using React.js. It allows users to log in, add, edit, delete, filter, and search tasks with features like setting priorities and due dates.
+A feature-rich Task Tracker built with **React.js**, supporting login, task creation, due dates, priorities, editing, deletion, filtering, and local storage.
 
+Live Demo: 🔗 [View on Netlify](https://tasktrackk17.netlify.app/)
 
- Features
+---
 
-- 👤 Login with localStorage persistence
-- ➕ Add tasks with title, description, priority, and due date
+## 🚀 Features
+
+- 🔐 Login system using localStorage (no backend)
+- ➕ Add tasks with:
+  - Title, description, priority, and due date
 - ✅ Mark tasks as completed or pending
-- ✏️ Edit task details inline
+- ✏️ Edit tasks inline
 - 🗑️ Delete tasks with confirmation
-- 🔍 Real-time search and filter by status (all, completed, pending)
-- 🎯 Priority levels: High, Medium, Low
-- 📅 Due Date picker
-- 💾 Tasks persist on page refresh (localStorage)
-- 📱 Responsive design (mobile + desktop)
+- 🔍 Search and filter tasks (All / Completed / Pending)
+- 📅 LocalStorage-based persistence (auto-save)
+- 🎨 Responsive, mobile-friendly UI
 
- 
- Setup Instructions
+---
 
-1. Clone the repository  
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, React Router DOM
+- **Styling:** Pure CSS (modular per component)
+- **State Management:** useState, useEffect
+- **Storage:** LocalStorage
+- **Deployment:** Netlify
+
+---
+
+## 📂 Project Structure
+
+```
+Task-Tracker/
+├── public/
+│   └── index.html, icons, manifest
+├── src/
+│   ├── components/
+│   │   ├── Login.js, Dashboard.js, TaskForm.js, TaskList.js, TaskItem.js, TaskFilter.js
+│   │   └── Corresponding CSS files
+│   ├── App.js, index.js, App.css, index.css
+├── package.json
+```
+
+---
+
+## ⚙️ How to Run Locally
+
+1. **Clone the repository**
+```bash
 git clone https://github.com/JoshiHarshita123/Task-Tracker.git
-
-csharp
-Copy
-Edit
-
-2. Navigate into the project directory  
 cd Task-Tracker
+```
 
-markdown
-Copy
-Edit
-
-3. Install dependencies  
+2. **Install dependencies**
+```bash
 npm install
+```
 
-pgsql
-Copy
-Edit
-
-4. Start the development server  
+3. **Start the app**
+```bash
 npm start
+```
 
-yaml
-Copy
-Edit
+4. Visit: `http://localhost:3000`
 
-5. Open your browser and go to:  
-[http://localhost:3000](http://localhost:3000)
+---
 
- Technologies Used
+## 📦 Build for Production
 
-- ⚛️ React.js (functional components + hooks)
-- 🎨 CSS
-- 💾 localStorage
-- 🧩 React DOM, JSX
-- 🔍 VS Code for development
+```bash
+npm run build
+```
+Then deploy the `build/` folder on [Netlify](https://netlify.com) or any static hosting service.
 
- Live Demo
+---
 
-[🔗 Click here to view the live app](https://your-deployment-url.netlify.app)  
-(Replace with actual Netlify/Vercel/GitHub Pages link after deployment)
+## 🧑‍💻 Author
 
-
- Sample Tasks for Testing
-
-```js
-const sampleTasks = [
-{
- id: 1,
- title: "Complete React assignment",
- description: "Build a task tracker application",
- completed: false,
- createdAt: "2024-01-15T10:00:00Z"
-},
-{
- id: 2,
- title: "Review JavaScript concepts",
- description: "Go through ES6+ features",
- completed: true,
- createdAt: "2024-01-14T15:30:00Z"
-}
-];
-
-Author
-Harshita Joshi
-B.Tech CSE — Graphic Era Hill University
-
- License
-This project is open-source and free to use.
-
-
-
+Made with ❤️ by [Harshita Joshi](https://github.com/JoshiHarshita123)
